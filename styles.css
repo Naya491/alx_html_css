@@ -208,15 +208,13 @@ text-align: center;
           
       }
       .section-two {
+        max-height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 40px;         
         background-color: #C271FF;
         color: #ffffff;
-        width: 1060;
-            height: 190;
-            opacity: 1;
        padding: 110 190px;
        
       }
@@ -256,12 +254,10 @@ text-align: center;
       .section-three {
         text-align: center;
         background: #fff;
-        width: 1228px;
-        height: 395px;
-        opacity: 1;
+        max-height: 40vh; 
         display: block;
-        margin-left: 120px;
-        margin-bottom: 100px;
+        margin: 40px;
+       
 
       }
       
@@ -270,7 +266,9 @@ text-align: center;
         font-weight: 300;
         font-size: 32px;
         color: #071629;
-        margin-bottom: 60px;
+        margin: 40px auto;   /* reduce outer spacing (top/bottom) */
+        padding: 20px 0;     /* reduce inner spacing */
+        max-width: 1200px;
       }
       
       .section-three h2 span {
@@ -283,6 +281,11 @@ text-align: center;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
+        margin: 40px auto;   /* reduce outer spacing (top/bottom) */
+        padding: 20px 0;     /* reduce inner spacing */
+        max-width: 1200px;
+
+
       }
       
       .tutorial {
@@ -298,7 +301,7 @@ text-align: center;
       
       .thumbnail img {
         width: 100%;
-        border-radius: 12px;
+        border-radius: 10px;
         display: block;
       }
       
@@ -362,16 +365,15 @@ text-align: center;
         text-align: center;
         background: #071629; 
         color: white;
-        width: 1440;
-        height: 552;
-        opacity: 1;
-        top: 209px;
+        width: 1450;
+        min-height: 502;
+        margin-top: 250px;
     
       }
       
       .section-four h2 {
         font-size: 36px;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
         font-weight: 300;
         padding: 10 20px;
         font-family: 'Source Sans Pro', sans-serif;
@@ -387,7 +389,7 @@ text-align: center;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         padding: 10 100px;
       }
       
@@ -437,7 +439,7 @@ text-align: center;
 
 .section-five {
 
-        max-height: 50vh; 
+        max-height: 40vh; 
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -445,14 +447,15 @@ text-align: center;
         background: #fff;
         color: #071629;
         text-align: center;
-        width: 1390;
-        padding-left: 60px;
+        margin-bottom: 500px;
+        margin-top: 100px;
+
 
   }
   
   .section-five h2 {
     font-size: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 120px;
     font-weight: 300;
     color: #071629;
     font-family: 'Source Sans Pro', sans-serif;
@@ -461,21 +464,18 @@ text-align: center;
   
   .faq-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 100px;
-    min-width: 520px;
-    margin: 0 auto;
-    text-align: left; 
-    align-items: center;
-    padding: 25 10px;
-    min-height: 390px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    text-align: left;
+    padding: 20 370px;
+    
   }
   
   .faq-item h3 {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 15px;
-    color: #071629; /* highlight questions */
+    color: #071629;
     font-family: 'Source Sans Pro', sans-serif;
     margin-bottom: 20px;
     
@@ -487,10 +487,6 @@ text-align: center;
     color: #444;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-    width: 250;
-    height: 100;
-    opacity: 1;
-    top: 100px;
     
   }
   footer {
