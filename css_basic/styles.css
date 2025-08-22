@@ -1,0 +1,40 @@
+/* Reset margin/padding for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+ 
+  header,
+  main,
+  footer {
+    width: 100%;
+  }
+  
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+  }
+  
+  /* Article takes 2/3 width on the left */
+  article {
+    flex: 2;
+    overflow-y: auto;
+  }
+  
+  
+  aside {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
