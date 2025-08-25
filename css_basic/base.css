@@ -198,3 +198,15 @@ h6 {
   	float: none;
   }
 }
+@media (max-width: 768px) {
+    body.works_on_smartphone main {
+      flex-direction: column;
+    }
+    body.works_on_smartphone article,
+    body.works_on_smartphone aside {
+      flex: none;
+      width: 100%;
+      max-height: 50vh; 
+      overflow-y: auto;
+    }
+  }
